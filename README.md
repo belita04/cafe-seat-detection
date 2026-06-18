@@ -31,44 +31,44 @@
 
 1. 저장소 복제
 
-%cd /content
-!rm -rf cafe-seat-detection
-!git clone https://github.com/belita04/cafe-seat-detection.git
+   %cd /content
+   !rm -rf cafe-seat-detection
+   !git clone https://github.com/belita04/cafe-seat-detection.git
 
 3. 프로젝트 폴더로 이동
    
 
-%cd cafe-seat-detection
+   %cd cafe-seat-detection
 
 
 4. 패키지 설치
 
-!pip install -r requirements.txt
+   !pip install -r requirements.txt
 
 5. Streamlit 앱 실행
 
-!streamlit run app.py \
-    --server.port 8501 \
-    --server.address 0.0.0.0 \
-    --server.headless true \
-    --server.enableCORS false \
-    --server.enableXsrfProtection false \
-    > /content/streamlit_test_log.txt 2>&1 &
+   !streamlit run app.py \
+       --server.port 8501 \
+       --server.address 0.0.0.0 \
+       --server.headless true \
+       --server.enableCORS false \
+       --server.enableXsrfProtection false \
+       > /content/streamlit_test_log.txt 2>&1 &
 
-!sleep 5
-!cat /content/streamlit_test_log.txt
+   !sleep 5
+   !cat /content/streamlit_test_log.txt
 
 6. Cloudflare Tunnel 주소 만들기
 
 
-Cloudflare Tunnel 설치
-
-!wget -q -O /content/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
-!chmod +x /content/cloudflared
-
-Streamlit 앱 외부 접속 링크 생성
-
-!/content/cloudflared tunnel --url http://127.0.0.1:8501 --no-autoupdate
+   Cloudflare Tunnel 설치
+   
+   !wget -q -O /content/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+   !chmod +x /content/cloudflared
+   
+   Streamlit 앱 외부 접속 링크 생성
+   
+   !/content/cloudflared tunnel --url http://127.0.0.1:8501 --no-autoupdate
 
 ## 5. 모델 가중치 처리 방법
 
