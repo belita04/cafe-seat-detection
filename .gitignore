@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+*.pt
+*.onnx
+*.engine
+
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+streamlit_log.txt
+.DS_Store
