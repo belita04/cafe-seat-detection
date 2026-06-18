@@ -75,7 +75,7 @@ Streamlit 앱 외부 접속 링크 생성
 ## 5. 모델 가중치 처리 방법
 
 GitHub는 100MB를 초과하는 대용량 파일 업로드를 제한하므로 모델 가중치 파일은 Google Drive에 별도로 저장합니다.
-
+- Google Drive 주소: https://drive.google.com/drive/folders/1PKKavRkXLQZrpYc8EPXXjFkbfmKx_f9K?usp=sharing
 - Baseline 모델: best_v1_baseline.pt
 - Enhanced 모델: best_v2_enhanced.pt
 
@@ -116,6 +116,9 @@ models/best_v2_enhanced.pt
   <img width="1034" height="188" alt="영상 업로드 화면" src="https://github.com/user-attachments/assets/11fdebec-e0f5-460e-8b99-013842e18990" />
 
 - 좌석 EMPTY / OCCUPIED 분석 결과 화면
+
+  <img width="2230" height="1498" alt="실행화면" src="https://github.com/user-attachments/assets/8c025496-d93e-406b-b851-318b9cca2f84" />
+
 
 ## 9. 팀원별 역할 분담
 
