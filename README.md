@@ -10,7 +10,7 @@
 - YOLOv8 기반 객체 탐지
 - ROI 기반 좌석별 EMPTY / OCCUPIED 판단
 - Baseline 모델과 Enhanced 모델 선택 기능
-- Confidence threshold, NMS IoU, ROI overlap threshold 조정 기능
+- Confidence threshold, NMS IoU, ROI overlap threshold 등 조정 기능
 - 프레임 간격 기반 빠른 영상 분석
 - 분석 결과 영상 출력 및 다운로드
 
