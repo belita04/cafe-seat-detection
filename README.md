@@ -110,6 +110,9 @@ models/best_v2_enhanced.pt
   <img width="2878" height="1520" alt="Streamlit 메인화면" src="https://github.com/user-attachments/assets/ff5ebd85-9f00-4f50-aadf-07725ec4e2d5" />
 
 - 영상 업로드 화면
+
+  <img width="1034" height="188" alt="영상 업로드 화면" src="https://github.com/user-attachments/assets/11fdebec-e0f5-460e-8b99-013842e18990" />
+
 - 좌석 EMPTY / OCCUPIED 분석 결과 화면
 
 ## 9. 팀원별 역할 분담
