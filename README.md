@@ -123,5 +123,5 @@ models/best_v2_enhanced.pt
 - Streamlit UI 구현: 이명진
 - 성능 평가 및 Failure Case 분석: 이지민
 - 보고서 작성: 이명진
-- 발표 자료 준비 : 이지민
-- 발표 및 보고서 작성: 이명진
+- 발표 자료 준비: 이지민
+- 발표: 이명진
