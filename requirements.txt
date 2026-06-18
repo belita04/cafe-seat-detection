@@ -1,0 +1,10 @@
+streamlit
+ultralytics
+opencv-python-headless
+pandas
+numpy
+matplotlib
+pyyaml
+gdown
+imageio-ffmpeg
+torch
