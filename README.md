@@ -140,7 +140,7 @@ models/best_v2_enhanced.pt
 
 ## 9. 팀원별 역할 분담
 
-- 데이터셋 구축 및 라벨링: 이명진/ 이지민
+- 데이터셋 구축 및 라벨링: 이명진 / 이지민
 - Baseline 모델 학습: 이지민
 - Enhanced 모델 고도화: 이명진
 - Streamlit UI 구현: 이명진
