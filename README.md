@@ -49,16 +49,30 @@
 
 5. Streamlit 앱 실행
 
-   !streamlit run app.py \
-       --server.port 8501 \
-       --server.address 0.0.0.0 \
-       --server.headless true \
-       --server.enableCORS false \
-       --server.enableXsrfProtection false \
-       > /content/streamlit_test_log.txt 2>&1 &
+!pkill -f streamlit || true
 
-   !sleep 5
-   !cat /content/streamlit_test_log.txt
+!pkill -f cloudflared || true
+
+!pkill -f localtunnel || true
+
+!sleep 2
+
+!fuser -k 8501/tcp || true
+
+!sleep 2
+
+!streamlit run app.py \
+    --server.port 8501 \
+    --server.address 0.0.0.0 \
+    --server.headless true \
+    --server.enableCORS false \
+    --server.enableXsrfProtection false \
+    > /content/streamlit_test_log.txt 2>&1 &
+
+!sleep 5
+!cat /content/streamlit_test_log.txt
+
+
 
 6. Cloudflare Tunnel 주소 만들기
 
@@ -66,6 +80,7 @@
    Cloudflare Tunnel 설치
    
    !wget -q -O /content/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+   
    !chmod +x /content/cloudflared
    
    Streamlit 앱 외부 접속 링크 생성
