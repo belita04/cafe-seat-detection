@@ -86,6 +86,8 @@
    ```bash
    !/content/cloudflared tunnel --url http://127.0.0.1:8501 --no-autoupdate
    ```
+
+이때, quick tunnel 이라고 써있는 주소를 클릭 하시면 웹이 열립니다.
 ## 5. 모델 가중치 처리 방법
 
 GitHub는 100MB를 초과하는 대용량 파일 업로드를 제한하므로 모델 가중치 파일은 Google Drive에 별도로 저장합니다.
