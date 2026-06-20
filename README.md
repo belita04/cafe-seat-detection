@@ -109,9 +109,11 @@ models/best_v2_enhanced.pt
 3. Baseline 모델 학습
 4. Enhanced 모델 학습
 5. mAP50, mAP50-95, FPS, Latency 기반 성능 비교
-6. Streamlit 웹 앱 연동
-7. 동영상 업로드 기반 좌석 ROI 분석
-8. EMPTY / OCCUPIED 결과 영상 생성
+6. 동영상 업로드 기반 좌석 ROI 분석
+7. EMPTY / OCCUPIED 결과 영상 생성
+8. Failure Case 분석
+9. Streamlit 웹 앱 연동
+
 
 ## 7. 좌석 판단 기준
 
@@ -144,5 +146,5 @@ models/best_v2_enhanced.pt
 - Streamlit UI 구현: 이명진
 - 성능 평가 및 Failure Case 분석: 이지민
 - 보고서 작성: 이명진
-- 발표 자료 준비: 이지민
+- 발표 자료 준비: 이지민 / 이명진
 - 발표: 이명진
