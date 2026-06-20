@@ -61,6 +61,7 @@
 
 !sleep 2
 
+```bash
 !streamlit run app.py \
     --server.port 8501 \
     --server.address 0.0.0.0 \
@@ -71,6 +72,7 @@
 
 !sleep 5
 !cat /content/streamlit_test_log.txt
+```
 
 
 
