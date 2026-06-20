@@ -35,17 +35,17 @@
    !rm -rf cafe-seat-detection
    !git clone https://github.com/belita04/cafe-seat-detection.git
 ```
-3. 프로젝트 폴더로 이동
+2. 프로젝트 폴더로 이동
    
 ```bash
    %cd cafe-seat-detection
 ```
 
-4. 패키지 설치
+3. 패키지 설치
 ```bash
    !pip install -r requirements.txt
 ```
-5. Streamlit 앱 실행
+4. Streamlit 앱 실행
 
 
 ```bash
@@ -73,7 +73,7 @@
 
 
 
-6. Cloudflare Tunnel 주소 만들기
+5. Cloudflare Tunnel 주소 만들기
 
 
    Cloudflare Tunnel 설치
