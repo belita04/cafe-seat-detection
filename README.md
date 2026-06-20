@@ -30,38 +30,35 @@
 아래 순서로 코드를 실행합니다.(실행 시 들여쓰기를 주의하세요)
 
 1. 저장소 복제
-
-   %cd /content
-   
+```bash
+   %cd /content   
    !rm -rf cafe-seat-detection
-   
    !git clone https://github.com/belita04/cafe-seat-detection.git
-
+```
 3. 프로젝트 폴더로 이동
    
-
+```bash
    %cd cafe-seat-detection
-
+```
 
 4. 패키지 설치
-
+```bash
    !pip install -r requirements.txt
-
+```
 5. Streamlit 앱 실행
 
+
+```bash
 !pkill -f streamlit || true
-
 !pkill -f cloudflared || true
-
 !pkill -f localtunnel || true
 
 !sleep 2
 
 !fuser -k 8501/tcp || true
-
 !sleep 2
 
-```bash
+
 !streamlit run app.py \
     --server.port 8501 \
     --server.address 0.0.0.0 \
@@ -80,15 +77,15 @@
 
 
    Cloudflare Tunnel 설치
-   
+  ```bash 
    !wget -q -O /content/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
    
    !chmod +x /content/cloudflared
-   
+   ```
    Streamlit 앱 외부 접속 링크 생성
-   
+   ```bash
    !/content/cloudflared tunnel --url http://127.0.0.1:8501 --no-autoupdate
-
+   ```
 ## 5. 모델 가중치 처리 방법
 
 GitHub는 100MB를 초과하는 대용량 파일 업로드를 제한하므로 모델 가중치 파일은 Google Drive에 별도로 저장합니다.
