@@ -78,9 +78,9 @@
 
    Cloudflare Tunnel 설치
   ```bash 
-   !wget -q -O /content/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
+  !wget -q -O /content/cloudflared https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64
    
-   !chmod +x /content/cloudflared
+  !chmod +x /content/cloudflared
    ```
    Streamlit 앱 외부 접속 링크 생성
    ```bash
