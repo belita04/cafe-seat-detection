@@ -32,7 +32,9 @@
 1. 저장소 복제
 
    %cd /content
+   
    !rm -rf cafe-seat-detection
+   
    !git clone https://github.com/belita04/cafe-seat-detection.git
 
 3. 프로젝트 폴더로 이동
